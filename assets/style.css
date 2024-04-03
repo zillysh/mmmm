@@ -1,4 +1,93 @@
-h1{
- color:tomato;
- font-size: 80px;
-}
+/* Reset styles */
+html, body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #FF3333; /* Red color for heading */
+  }
+  
+  p {
+    margin-bottom: 10px;
+    color: #333; /* Dark text color */
+  }
+  
+  .ingredients li {
+    margin-left: 20px; /* Add some indentation */
+    margin-bottom: -5px;
+  }
+  
+  .ingredient-list {
+    margin-bottom: -5px; /* Adjust the bottom margin */
+  }
+
+  li img {
+    max-width: 100px; /* Smaller image size */
+    height: auto;
+    margin-right: 20px;
+    float: left;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+    border: 1px solid #ccc; /* Add a border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow */
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .meal-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: tomato;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .meal-list li {
+    margin-right: 10px; 
+  }
+
+  .container {
+    position: relative; /* Needed for absolute positioning */
+  }
+  
+  .circle {
+    width: 200px;
+    height: 200px;
+    border: 2px solid red; /* Red border */
+    border-radius: 50%; /* Creates a circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .circle p {
+    color: tomato;
+  }
+
+  #quick-meals-button:hover {
+    color: black; 
+    cursor: pointer; 
+  }

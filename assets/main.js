@@ -1,0 +1,58 @@
+// Function to render an individual item
+const renderSingleItem = (item) => {
+  // Make a template literal as before
+  return `
+      <li>
+          <div class="card-content">
+              <h2>${item.itemName}</h2>
+              <img src="${item.image}" alt="${item.itemName}">
+              <p>Type: ${item.type}</p>
+              <p>Ingredients:</p>
+              <ul>
+                  ${item.ingredients.map(ingredient => `<li class="ingredient-list">${ingredient}</li>`).join('')}
+              </ul>
+              <p>Cook Time: ${item.cookTime}</p>
+              <p>Meal Type: ${item.mealType}</p>
+          </div>
+      </li>
+  `;
+};
+
+// Function to render items
+const renderItems = (data) => {
+  // The `ul` where the items will be inserted
+  const dataList = document.getElementById('data-list');
+
+  // Loop through each item in the data array and render it
+  data.forEach((item) => {
+      dataList.insertAdjacentHTML('beforeend', renderSingleItem(item));
+  });
+};
+
+// Function to render only quick meals
+const renderQuickMeals = (data) => {
+  // Calculate quick meals (items with cook time less than or equal to 10 minutes)
+  const quickMeals = data.filter(item => parseInt(item.cookTime) <= 10);
+
+  // Render quick meals
+  renderItems(quickMeals);
+};
+
+// Fetch gets your (local) JSON file…
+fetch('assets/data.json')
+  .then(response => response.json())
+  .then(data => {
+      // Initial rendering of all items
+      renderItems(data);
+
+      // Add event listener to the quick meals button
+      const quickMealsButton = document.getElementById('quick-meals-button');
+      quickMealsButton.addEventListener('click', () => {
+          // Clear existing items
+          const dataList = document.getElementById('data-list');
+          dataList.innerHTML = '';
+
+          // Render only quick meals
+          renderQuickMeals(data);
+      });
+  });

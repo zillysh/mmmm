@@ -1,0 +1,34 @@
+[
+    {
+        "itemName": "Pizza",
+        "type": "Bread",
+        "ingredients": ["Dough", "Sauce", "Cheese", "Olives"],
+        "image": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Homemade-Pizza_EXPS_FT23_376_EC_120123_3.jpg",
+        "cookTime": "20 minutes",
+        "mealType": "Main Course"
+    },
+    {
+        "itemName": "Pasta",
+        "type": "Bread",
+        "ingredients": ["Pasta", "Sauce", "Peppers", "Olives"],
+        "image": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Homemade-Pizza_EXPS_FT23_376_EC_120123_3.jpg",
+        "cookTime": "10 minutes",
+        "mealType": "Main Course"
+    },
+    {
+        "itemName": "Pizza",
+        "type": "Bread",
+        "ingredients": ["Dough", "Sauce", "Cheese", "Olives"],
+        "image": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Homemade-Pizza_EXPS_FT23_376_EC_120123_3.jpg",
+        "cookTime": "5 minutes",
+        "mealType": "Main Course"
+    },
+    {
+        "itemName": "Pizza",
+        "type": "Bread",
+        "ingredients": ["Dough", "Sauce", "Cheese", "Olives"],
+        "image": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Homemade-Pizza_EXPS_FT23_376_EC_120123_3.jpg",
+        "cookTime": "5 minutes",
+        "mealType": "Main Course"
+    }
+]

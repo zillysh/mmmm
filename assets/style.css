@@ -32,10 +32,11 @@ html, body, h1, p, ul, li {
   }
 
   li img {
-    max-width: 100px; /* Smaller image size */
-    height: auto;
+    max-width: 200px; /* Smaller image size */
+    height: 200px;
     margin-right: 20px;
-    float: left;
+    object-fit: cover;
+    border-radius: 50%;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
@@ -47,6 +48,7 @@ html, body, h1, p, ul, li {
     padding: 20px;
     border: 1px solid #ccc; /* Add a border */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow */
+    height: 500px;
   }
 
   .grid-container {
@@ -88,6 +90,11 @@ html, body, h1, p, ul, li {
   }
 
   #quick-meals-button:hover {
+    color: black; 
+    cursor: pointer; 
+  }
+
+  #dinner-button:hover {
     color: black; 
     cursor: pointer; 
   }

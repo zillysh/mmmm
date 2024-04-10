@@ -38,6 +38,15 @@ const renderQuickMeals = (data) => {
   renderItems(quickMeals);
 };
 
+// Function to render only dinner meals
+const renderDinner = (data) => {
+  // Filter items with mealType equal to 'Dinner'
+  const dinner = data.filter(item => item.mealType === 'Dinner');
+
+  // Render dinner meals
+  renderItems(dinner);
+};
+
 // Fetch gets your (local) JSON file…
 fetch('assets/data.json')
   .then(response => response.json())
@@ -54,5 +63,15 @@ fetch('assets/data.json')
 
           // Render only quick meals
           renderQuickMeals(data);
+      });
+
+      const dinnerButton = document.getElementById('dinner-button');
+      dinnerButton.addEventListener('click', () => {
+          // Clear existing items
+          const dataList = document.getElementById('data-list');
+          dataList.innerHTML = '';
+
+          // Render only dinner meals
+          renderDinner(data);
       });
   });

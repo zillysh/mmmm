@@ -3,31 +3,31 @@
         "itemName": "Pizza",
         "type": "Bread",
         "ingredients": ["Dough", "Sauce", "Cheese", "Olives"],
-        "image": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Homemade-Pizza_EXPS_FT23_376_EC_120123_3.jpg",
+        "image": "https://images.beta.cosmos.so/cb807faf-94a8-4dd5-9742-024833e53950?format=jpeg",
         "cookTime": "20 minutes",
-        "mealType": "Main Course"
+        "mealType": "Dinner"
     },
     {
         "itemName": "Pasta",
-        "type": "Bread",
+        "type": "Pasta",
         "ingredients": ["Pasta", "Sauce", "Peppers", "Olives"],
-        "image": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Homemade-Pizza_EXPS_FT23_376_EC_120123_3.jpg",
+        "image": "https://images.beta.cosmos.so/ac0ae44e-630e-461f-bea9-e44a0304b501?format=jpeg",
         "cookTime": "10 minutes",
         "mealType": "Main Course"
     },
     {
-        "itemName": "Pizza",
-        "type": "Bread",
-        "ingredients": ["Dough", "Sauce", "Cheese", "Olives"],
-        "image": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Homemade-Pizza_EXPS_FT23_376_EC_120123_3.jpg",
+        "itemName": "Noodles",
+        "type": "Noodles",
+        "ingredients": ["Noodles", "Tofu", "Bok Choy"],
+        "image": "https://images.beta.cosmos.so/a27e17e3-3591-424c-95ac-be8c149abae5?format=jpeg",
         "cookTime": "5 minutes",
         "mealType": "Main Course"
     },
     {
-        "itemName": "Pizza",
+        "itemName": "Jam Toast",
         "type": "Bread",
-        "ingredients": ["Dough", "Sauce", "Cheese", "Olives"],
-        "image": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Homemade-Pizza_EXPS_FT23_376_EC_120123_3.jpg",
+        "ingredients": ["Bread", "Jam"],
+        "image": "https://images.beta.cosmos.so/971101e4-2dea-4628-9318-3ad8dca484e0?format=jpeg",
         "cookTime": "5 minutes",
         "mealType": "Main Course"
     }

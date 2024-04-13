@@ -3,7 +3,7 @@ const renderSingleItem = (item) => {
   // Make a template literal as before
   return `
       <li>
-          <div class="card-content">
+          <div class="item-container">
               <img src="${item.image}" alt="${item.itemName}">
               <h2>${item.itemName}</h2>
           </div>

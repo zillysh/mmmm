@@ -1,100 +1,92 @@
-/* Reset styles */
-html, body, h1, p, ul, li {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    padding: 20px;
-  }
-  
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #FF3333; /* Red color for heading */
-  }
-  
-  p {
-    margin-bottom: 10px;
-    color: #333; /* Dark text color */
-  }
-  
-  .ingredients li {
-    margin-left: 20px; /* Add some indentation */
-    margin-bottom: -5px;
-  }
-  
-  .ingredient-list {
-    margin-bottom: -5px; /* Adjust the bottom margin */
-  }
 
-  li img {
-    max-width: 200px; /* Smaller image size */
-    height: 200px;
-    margin-right: 20px;
-    object-fit: cover;
-    border-radius: 50%;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card-content {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    padding: 20px;
-    border: 1px solid #ccc; /* Add a border */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow */
-    height: 500px;
-  }
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
 
-  .meal-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    margin-bottom: 20px;
-    font-size: 30px;
-    color: tomato;
-    flex-direction: row;
-    justify-content: center;
-  }
-  
-  .meal-list li {
-    margin-right: 10px; 
-  }
 
-  .container {
-    position: relative; /* Needed for absolute positioning */
-  }
-  
-  .circle {
-    width: 200px;
-    height: 200px;
-    border: 2px solid red; /* Red border */
-    border-radius: 50%; /* Creates a circle */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .circle p {
-    color: tomato;
-  }
+/*VARIABLES*/
 
-  #quick-meals-button:hover {
-    color: black; 
-    cursor: pointer; 
-  }
+/* FONT */
+:root {
+	--font-dm-mono: 'DM Mono', monospace;
+  --font-playfair-display: "Playfair Display", serif;
+}
 
-  #dinner-button:hover {
-    color: black; 
-    cursor: pointer; 
-  }
+/* FONT DETAILS */
+:root {
+--logo: 1.4em;
+--nav: 1.05em;
+--category-font-size: 2.5em;
+}
+
+/* MARGINS */
+:root {
+
+}
+
+/* DECOR */
+:root {
+  --background-color: #F7F6F3;
+  --main-text-color: #89693A;
+  --sub-text-color: #A49885;
+}
+
+/* BODY */
+body{
+  background-color: var(--background-color);
+}
+
+/* STICKY HEADER */
+
+.header-container {
+  position: sticky;
+  top: 0;
+  background-color: var(--background-color);
+  z-index: 10000;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 20px 23px;
+  color: var(--main-text-color);
+}
+
+.logo{
+  font-family: var(--font-playfair-display);
+  font-weight: 400;
+  font-size: var(--logo);
+}
+
+nav{
+  font-family: var(--font-dm-mono);
+  font-weight: 400;
+  font-size: var(--nav);
+}
+
+/* FOOD CATEGORY LIST */
+
+.category-list-container {
+  display: flex;
+  justify-content: center; 
+}
+
+.category-list{
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  max-width: 300px;
+  font-family: var(--font-playfair-display);
+  font-weight: 400;
+  font-size: var(--category-font-size);
+  color: var(--sub-text-color);
+  margin-bottom: -10px;
+}
+
+.category-list li{
+  margin-right: 10px;
+  margin-bottom: -9px;
+}

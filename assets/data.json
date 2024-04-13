@@ -14,21 +14,5 @@
         "image": "https://images.beta.cosmos.so/ac0ae44e-630e-461f-bea9-e44a0304b501?format=jpeg",
         "cookTime": "10 minutes",
         "mealType": "Main Course"
-    },
-    {
-        "itemName": "Noodles",
-        "type": "Noodles",
-        "ingredients": ["Noodles", "Tofu", "Bok Choy"],
-        "image": "https://images.beta.cosmos.so/a27e17e3-3591-424c-95ac-be8c149abae5?format=jpeg",
-        "cookTime": "5 minutes",
-        "mealType": "Main Course"
-    },
-    {
-        "itemName": "Jam Toast",
-        "type": "Bread",
-        "ingredients": ["Bread", "Jam"],
-        "image": "https://images.beta.cosmos.so/971101e4-2dea-4628-9318-3ad8dca484e0?format=jpeg",
-        "cookTime": "5 minutes",
-        "mealType": "Main Course"
     }
 ]

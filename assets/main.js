@@ -4,15 +4,8 @@ const renderSingleItem = (item) => {
   return `
       <li>
           <div class="card-content">
-              <h2>${item.itemName}</h2>
               <img src="${item.image}" alt="${item.itemName}">
-              <p>Type: ${item.type}</p>
-              <p>Ingredients:</p>
-              <ul>
-                  ${item.ingredients.map(ingredient => `<li class="ingredient-list">${ingredient}</li>`).join('')}
-              </ul>
-              <p>Cook Time: ${item.cookTime}</p>
-              <p>Meal Type: ${item.mealType}</p>
+              <h2>${item.itemName}</h2>
           </div>
       </li>
   `;

@@ -1,3 +1,11 @@
+
+
+// Function to update the "results" text
+const updateResultsText = (count) => {
+  const resultsText = document.getElementById('results-text');
+  resultsText.textContent = `${count} RESULT${count !== 1 ? 'S' : ''}`;
+};
+
 // Function to render an individual item
 const renderSingleItem = (item) => {
   // Make a template literal as before
@@ -20,7 +28,11 @@ const renderItems = (data) => {
   data.forEach((item) => {
       dataList.insertAdjacentHTML('beforeend', renderSingleItem(item));
   });
+
+  // Update the "results" text
+  updateResultsText(data.length);
 };
+
 
 // Function to render only quick meals
 const renderQuickMeals = (data) => {

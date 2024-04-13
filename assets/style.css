@@ -18,6 +18,7 @@
 --logo: 1.4em;
 --nav: 1.05em;
 --category-font-size: 2.5em;
+--filter-font-size: 1em;
 }
 
 /* MARGINS */
@@ -70,6 +71,8 @@ nav{
 /* FOOD CATEGORY LIST */
 
 .category-list-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: center; 
 }
@@ -89,4 +92,34 @@ nav{
 .category-list li{
   margin-right: 10px;
   margin-bottom: -9px;
+}
+
+/* SUB FILTER LIST */
+
+.filter-big-container {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: var(--font-dm-mono);
+  font-weight: 400;
+  font-size: var(--filter-font-size);
+  margin-top: 70px;
+  margin-bottom: 50px;
+  display: flex;
+  color: var(--sub-text-color);
+}
+
+.filter-small-container {
+  font-family: var(--font-dm-mono);
+  font-weight: 400;
+  font-size: var(--filter-font-size);
+  padding-left: 15px;
+  display: flex;
+  justify-content: space-between; 
+  color: var(--sub-text-color);
+  flex-grow: 1; 
+  justify-content: space-around;
+}
+
+.filter-small-container p {
+  text-decoration: underline;
 }

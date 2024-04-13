@@ -1,14 +1,13 @@
 
 
-// Function to update the "results" text
-const updateResultsText = (count) => {
+// Number of Results
+  const updateResultsText = (count) => {
   const resultsText = document.getElementById('results-text');
   resultsText.textContent = `${count} RESULT${count !== 1 ? 'S' : ''}`;
 };
 
 // Function to render an individual item
 const renderSingleItem = (item) => {
-  // Make a template literal as before
   return `
       <li>
           <div class="item-container">
@@ -19,38 +18,44 @@ const renderSingleItem = (item) => {
   `;
 };
 
-// Function to render items
-const renderItems = (data) => {
-  // The `ul` where the items will be inserted
+// Function to render list items
+  const renderItems = (data) => {
   const dataList = document.getElementById('data-list');
-
-  // Loop through each item in the data array and render it
   data.forEach((item) => {
       dataList.insertAdjacentHTML('beforeend', renderSingleItem(item));
   });
 
-  // Update the "results" text
   updateResultsText(data.length);
 };
 
 
-// Function to render only quick meals
-const renderQuickMeals = (data) => {
-  // Calculate quick meals (items with cook time less than or equal to 10 minutes)
-  const quickMeals = data.filter(item => parseInt(item.cookTime) <= 10);
+// Function to render items based on meal type
+  const renderMealsByType = (data, mealType) => {
+  const filteredMeals = data.filter(item => item.mealType.includes(mealType));
 
-  // Render quick meals
-  renderItems(quickMeals);
+  // Render filtered meals
+  const dataList = document.getElementById('data-list');
+  dataList.innerHTML = '';
+  renderItems(filteredMeals);
 };
 
-// Function to render only dinner meals
-const renderDinner = (data) => {
-  // Filter items with mealType equal to 'Dinner'
-  const dinner = data.filter(item => item.mealType === 'Dinner');
-
-  // Render dinner meals
-  renderItems(dinner);
+const buttonMealTypeList = {
+  'breakfast-button': 'Breakfast',
+  'lunch-button': 'Lunch',
+  'dinner-button': 'Dinner',
+  'dessert-button': 'Dessert',
+  'beverages-button': 'Beverages',
+  'snacks-button': 'Snacks',
+  'quick-button': 'Quick',
+  'fancy-button': 'Fancy',
+  'noodles-button': 'Noodles',
+  'pasta-button': 'Pasta',
+  'breads-button': 'Breads',
+  'wraps-button': 'Wraps'
 };
+
+
+
 
 // Fetch gets your (local) JSON file…
 fetch('assets/data.json')
@@ -59,24 +64,11 @@ fetch('assets/data.json')
       // Initial rendering of all items
       renderItems(data);
 
-      // Add event listener to the quick meals button
-      const quickMealsButton = document.getElementById('quick-meals-button');
-      quickMealsButton.addEventListener('click', () => {
-          // Clear existing items
-          const dataList = document.getElementById('data-list');
-          dataList.innerHTML = '';
-
-          // Render only quick meals
-          renderQuickMeals(data);
-      });
-
-      const dinnerButton = document.getElementById('dinner-button');
-      dinnerButton.addEventListener('click', () => {
-          // Clear existing items
-          const dataList = document.getElementById('data-list');
-          dataList.innerHTML = '';
-
-          // Render only dinner meals
-          renderDinner(data);
+      Object.keys(buttonMealTypeList).forEach(buttonId => {
+        const button = document.getElementById(buttonId);
+        button.addEventListener('click', () => {
+          const mealType = buttonMealTypeList[buttonId];
+          renderMealsByType(data, mealType);
+        });
       });
   });

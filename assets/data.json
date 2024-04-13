@@ -1,18 +1,23 @@
 [
     {
-        "itemName": "Pizza",
-        "type": "Bread",
-        "ingredients": ["Dough", "Sauce", "Cheese", "Olives"],
-        "image": "https://images.beta.cosmos.so/cb807faf-94a8-4dd5-9742-024833e53950?format=jpeg",
-        "cookTime": "20 minutes",
-        "mealType": "Dinner"
+        "image": "food images/black pepper noodles.jpg",
+        "itemName": "Pepper Noodles",
+        "cookTime": "30 minutes",
+        "ingredients": ["Noodles", "Tofu", "Bok Choy", "Soy Sauce"],
+        "mealType": "Lunch"
     },
     {
-        "itemName": "Pasta",
-        "type": "Pasta",
-        "ingredients": ["Pasta", "Sauce", "Peppers", "Olives"],
-        "image": "https://images.beta.cosmos.so/ac0ae44e-630e-461f-bea9-e44a0304b501?format=jpeg",
+        "image": "food images/chocolate oats.jpg",
+        "itemName": "Chocolate Oats",
         "cookTime": "10 minutes",
-        "mealType": "Main Course"
+        "ingredients": ["Chocolate Chips", "Oats", "Berries"],
+        "mealType": ["Breakfast","Dinner"]
+    },
+    {
+        "image": "food images/spinach ravioli.jpg",
+        "itemName": "Spinach Ravioli",
+        "cookTime": "30 minutes",
+        "ingredients": ["Chocolate Chips", "Oats", "Berries"],
+        "mealType": ["Breakfast","Lunch","Wraps"]
     }
 ]

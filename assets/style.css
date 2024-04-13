@@ -18,7 +18,7 @@
 --logo: 1.4em;
 --nav: 1.05em;
 --category-font-size: 2.5em;
---filter-font-size: 1em;
+--filter-font-size: 0.9em;
 }
 
 /* MARGINS */
@@ -39,7 +39,6 @@ body{
 }
 
 /* STICKY HEADER */
-
 .header-container {
   position: sticky;
   top: 0;
@@ -69,7 +68,6 @@ nav{
 }
 
 /* FOOD CATEGORY LIST */
-
 .category-list-container {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -95,10 +93,9 @@ nav{
 }
 
 /* SUB FILTER LIST */
-
 .filter-big-container {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   font-family: var(--font-dm-mono);
   font-weight: 400;
   font-size: var(--filter-font-size);
@@ -122,4 +119,10 @@ nav{
 
 .filter-small-container p {
   text-decoration: underline;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }

@@ -119,6 +119,15 @@ fetch('assets/data.json')
           const mealType = buttonMealTypeList[buttonId];
           searchFilter.mealType = mealType;
           renderMeals(items, searchFilter);
-        });
+        // Change font color and style for all li elements
+    const categoryList = document.querySelectorAll('.category-list li');
+    categoryList.forEach(li => {
+      li.style.color = ''; // Reset font color
+      li.style.fontStyle = ''; // Reset font style
+    });
+    // Change font color and style for the clicked li element
+    button.parentNode.style.color = 'var(--main-text-color)'; // Change font color
+    button.parentNode.style.fontStyle = 'italic'; // Change font style
+  });
       });
   });

@@ -2,24 +2,25 @@
     {
         "image": "food images/black pepper noodles.jpg",
         "itemName": "Pepper Noodles",
-        "cookTime": "20 Minutes",
+        "cookTime": "<15 Minutes",
         "ingredients": ["Noodles", "Tofu", "Bok Choy", "Soy Sauce"],
-        "mealType": ["Lunch"],
+        "mealType": ["Lunch","Dinner"],
         "cuisine": "Chinese"
     },
     {
         "image": "food images/chocolate oats.jpg",
         "itemName": "Chocolate Oats",
-        "cookTime": "10 Minutes",
-        "ingredients": ["Chocolate Chips", "Oats", "Berries"],
-        "mealType": ["Breakfast","Dinner"]
+        "cookTime": "5 Minutes",
+        "ingredients": ["Oats", "Chocolate Chips", "Berries"],
+        "mealType": ["Breakfast","Dessert"],
+        "cuisine": ""
     },
     {
         "image": "food images/spinach ravioli.jpg",
         "itemName": "Spinach Ravioli",
-        "cookTime": "30 Minutes",
+        "cookTime": "60 Minutes",
         "ingredients": ["Chocolate Chips", "Oats", "Berries"],
-        "mealType": ["Breakfast","Lunch","Wraps"]
+        "mealType": ["Dinner","Fancy"]
     },
     {
         "image": "food images/strawberry toast.jpg",

@@ -91,6 +91,18 @@ nav{
   margin-bottom: -9px;
 }
 
+.category-list li:hover {
+  font-style: italic;
+  color: var(--main-text-color);
+  cursor: pointer;
+}
+
+.category-list li:active {
+  font-style: italic;
+  color: var(--main-text-color);
+  cursor: pointer;
+}
+
 /* SUB FILTER LIST */
 .filter-big-container {
   font-family: var(--font-dm-mono);

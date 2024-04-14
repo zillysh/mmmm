@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="assets/reset.css" rel="stylesheet">
   <link href="assets/style.css" rel="stylesheet">
   <script defer src="assets/main.js"></script>
@@ -32,17 +33,44 @@
     </ul>
   </section>
   <section class="filter-big-container">
-    <p>SORT BY:</p>
     <div class="filter-small-container"">
-      <p>CUISINE</p>
-      <p>TIME</p>
-      <p>INGREDIENTS</p>
+      <div class="select-container">
+      <label for="cuisine-select" class="select-label">CUISINE</label>
+      <select onchange="filterCuisine()" id="cuisine-select" class="select-input">
+        <option value="" disabled selected>Select</option>
+        <option value="">All</option>
+        <option value="Italian">Italian</option>
+        <option value="Chinese">Chinese</option>
+        <option value="Mexican">Mexican</option>
+      </select>
+      </div>
+      <div class="select-container">
+        <label for="cuisine-select" class="select-label">TIME</label>
+      <select onchange="filterCookTime()" id="time-select" class="select-input">
+        <option value="" disabled selected>Select</option>
+        <option value="">All</option>
+        <option value="10 Minutes">10 Min</option>
+        <option value="20 Minutes">20 Min</option>
+        <option value="30 Minutes">30 Min</option>
+      </select>
+      </div>
+      <div class="select-container">
+        <label for="cuisine-select" class="select-label">INGREDIENTS</label>
+      <select onchange="filterCookTime()" id="time-select" class="select-input">
+        <option value="" disabled selected>Select</option>
+        <option value="">All</option>
+        <option value="10 Minutes">Bread</option>
+        <option value="20 Minutes">Noodles</option>
+        <option value="30 Minutes">Cheese</option>
+      </select>
+      </div>
     </div>
   </section>
+  <section class="item-information">
   <div id="results-text" class="results-text"></div>
+  <button onclick="resetFilters()">RESET</button>
+  </section>
   <ul class="food-grid" id="data-list"></ul>
 </body>
 
 </html>
-
-

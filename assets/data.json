@@ -112,6 +112,78 @@
         "cuisine": "Asian"
     },
     {
+        "image": "food images/pancakes.jpg",
+        "itemName": "Pancakes",
+        "cookTime": "<15 Minutes",
+        "ingredients": [""],
+        "mealType": ["Snacks","Breakfast","Dessert"],
+        "cuisine": "Sweet"
+    },
+    {
+        "image": "food images/pizza.jpg",
+        "itemName": "Pizza",
+        "cookTime": "30 Minutes",
+        "ingredients": [""],
+        "mealType": ["Lunch","Breads","Dinner"],
+        "cuisine": "Italian"
+    },
+    {
+        "image": "food images/rosé pasta.jpg",
+        "itemName": "Rosé Pasta",
+        "cookTime": "30 Minutes",
+        "ingredients": [""],
+        "mealType": ["Lunch","Dinner","Pasta","Quick"],
+        "cuisine": "Italian"
+    },
+    {
+        "image": "food images/spaghetti marinara.jpg",
+        "itemName": "Spaghetti Marinara",
+        "cookTime": "30 Minutes",
+        "ingredients": [""],
+        "mealType": ["Lunch","Dinner","Pasta","Quick"],
+        "cuisine": "Italian"
+    },
+    {
+        "image": "food images/spicy dumpling soup.jpg",
+        "itemName": "Spicy Dumpling Soup",
+        "cookTime": "<15 Minutes",
+        "ingredients": [""],
+        "mealType": ["Lunch","Dinner","Quick"],
+        "cuisine": "Asian"
+    },
+    {
+        "image": "food images/spinach ravioli.jpg",
+        "itemName": "Spinach Ravioli",
+        "cookTime": "60 Minutes",
+        "ingredients": [""],
+        "mealType": ["Lunch","Dinner","Pasta","Fancy"],
+        "cuisine": "Italian"
+    },
+    {
+        "image": "food images/strawberry toast.jpg",
+        "itemName": "Strawberry Toast",
+        "cookTime": "<15 Minutes",
+        "ingredients": [""],
+        "mealType": ["Snacks","Breakfast","Dessert"],
+        "cuisine": "Sweet"
+    },
+    {
+        "image": "food images/tofu dumplings.jpg",
+        "itemName": "Tofu Dumplings",
+        "cookTime": "45 Minutes",
+        "ingredients": [""],
+        "mealType": ["Dinner","Fancy"],
+        "cuisine": "Asian"
+    },
+    {
+        "image": "food images/tofu stir fry.jpg",
+        "itemName": "Tofu Stir-Fry",
+        "cookTime": "20 Minutes",
+        "ingredients": [""],
+        "mealType": ["Lunch","Dinner","Quick"],
+        "cuisine": "Asian"
+    },
+    {
         "image": "food images/bahn mi.jpg",
         "itemName": "Bahn Mi",
         "cookTime": "60 Minutes",

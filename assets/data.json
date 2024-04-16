@@ -1,33 +1,122 @@
 [
     {
         "image": "food images/black pepper noodles.jpg",
-        "itemName": "Pepper Noodles",
-        "cookTime": "<15 Minutes",
+        "itemName": "Black Pepper Noodles",
+        "cookTime": "20 Minutes",
         "ingredients": ["Noodles", "Tofu", "Bok Choy", "Soy Sauce"],
-        "mealType": ["Lunch","Dinner"],
-        "cuisine": "Chinese"
+        "mealType": ["Lunch","Dinner","Noodles","Quick"],
+        "cuisine": "Asian"
+    },
+    {
+        "image": "food images/black bean burger.jpg",
+        "itemName": "Black Bean Burger",
+        "cookTime": "20 Minutes",
+        "ingredients": ["Bread", "Black Bean Patty", "Tomato", "Sauce", "Cheese"],
+        "mealType": ["Lunch","Dinner","Breads"],
+        "cuisine": "American"
+    },
+    {
+        "image": "food images/cacio e pepe.jpg",
+        "itemName": "Cacio E Pepe",
+        "cookTime": "20 Minutes",
+        "ingredients": ["Pasta", "Butter", "Pepper", "Cheese"],
+        "mealType": ["Lunch","Dinner","Pasta","Quick"],
+        "cuisine": "Italian"
     },
     {
         "image": "food images/chocolate oats.jpg",
         "itemName": "Chocolate Oats",
-        "cookTime": "5 Minutes",
-        "ingredients": ["Oats", "Chocolate Chips", "Berries"],
-        "mealType": ["Breakfast","Dessert"],
-        "cuisine": ""
+        "cookTime": "<15 Minutes",
+        "ingredients": ["Oats", "Chocolate Chips", "Milk", "Berries"],
+        "mealType": ["Snacks","Breakfast","Dessert"],
+        "cuisine": "Sweet"
     },
     {
-        "image": "food images/spinach ravioli.jpg",
-        "itemName": "Spinach Ravioli",
+        "image": "food images/ceaser salad.jpg",
+        "itemName": "Caeser Salad",
+        "cookTime": "<15 Minutes",
+        "ingredients": [""],
+        "mealType": ["Snacks","Lunch","Quick"],
+        "cuisine": "American"
+    },
+    {
+        "image": "food images/chilli oil noodles.jpg",
+        "itemName": "Chilli Oil Noodles",
+        "cookTime": "20 Minutes",
+        "ingredients": [""],
+        "mealType": ["Lunch","Dinner","Noodles","Quick"],
+        "cuisine": "Asian"
+    },
+    {
+        "image": "food images/clear dumpling soup.jpg",
+        "itemName": "Clear Dumpling Soup",
+        "cookTime": "<15 Minutes",
+        "ingredients": [""],
+        "mealType": ["Lunch","Dinner","Quick"],
+        "cuisine": "Asian"
+    },
+    {
+        "image": "food images/creamy ravioli.jpg",
+        "itemName": "Creamy Ravioli",
+        "cookTime": "45 Minutes",
+        "ingredients": [""],
+        "mealType": ["Lunch","Dinner","Pasta","Fancy"],
+        "cuisine": "Italian"
+    },
+    {
+        "image": "food images/dan dan noodles.jpg",
+        "itemName": "Dan Dan Noodles",
+        "cookTime": "20 Minutes",
+        "ingredients": [""],
+        "mealType": ["Lunch","Dinner","Noodles","Quick"],
+        "cuisine": "Asian"
+    },
+    {
+        "image": "food images/fried rice.jpg",
+        "itemName": "Fried Rice",
+        "cookTime": "30 Minutes",
+        "ingredients": [""],
+        "mealType": ["Lunch","Dinner"],
+        "cuisine": "Asian"
+    },
+    {
+        "image": "food images/kimbap.jpg",
+        "itemName": "Kimbap",
         "cookTime": "60 Minutes",
-        "ingredients": ["Chocolate Chips", "Oats", "Berries"],
-        "mealType": ["Dinner","Fancy"]
+        "ingredients": [""],
+        "mealType": ["Lunch","Dinner","Fancy"],
+        "cuisine": "Asian"
     },
     {
-        "image": "food images/strawberry toast.jpg",
-        "itemName": "Stawberry Toast",
-        "cookTime": "10 Minutes",
-        "ingredients": ["Strawberry", "Oats", "Berries"],
-        "cuisine": "Chinese",
-        "mealType": ["Breakfast","Lunch","Wraps"]
+        "image": "food images/mac & cheese.jpg",
+        "itemName": "Mac & Cheese",
+        "cookTime": "20 Minutes",
+        "ingredients": [""],
+        "mealType": ["Lunch","Dinner","Pasta","Quick"],
+        "cuisine": "Italian"
+    },
+    {
+        "image": "food images/mango sticky rice.jpg",
+        "itemName": "Mango Sticky Rice",
+        "cookTime": "45 Minutes",
+        "ingredients": [""],
+        "mealType": ["Dessert"],
+        "cuisine": "Sweet"
+    },
+    {
+        "image": "food images/noodle soup.jpg",
+        "itemName": "Noodle Soup",
+        "cookTime": "20 Minutes",
+        "ingredients": [""],
+        "mealType": ["Lunch","Dinner","Noodles","Quick"],
+        "cuisine": "Asian"
+    },
+    {
+        "image": "food images/bahn mi.jpg",
+        "itemName": "Bahn Mi",
+        "cookTime": "60 Minutes",
+        "ingredients": ["Bread", "Tofu", "Pickled Veg", "Dressing"],
+        "mealType": ["Lunch","Breads","Fancy"],
+        "cuisine": "Asian"
     }
 ]

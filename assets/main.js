@@ -50,6 +50,9 @@ let searchFilter = {
   if (filter.cookTime !== '')
     filteredMeals = filteredMeals.filter(item => item.cookTime === filter.cookTime);
 
+  if (filter.ingredients !== '')
+    filteredMeals = filteredMeals.filter(item => item.ingredients.includes(filter.ingredients));
+  
   // Render filtered meals
   const dataList = document.getElementById('data-list');
   dataList.innerHTML = '';
@@ -86,8 +89,8 @@ function filterCookTime() {
 }
 
 function filterIngredients() {
-  let cuisineType = document.getElementById("cuisine-select").value;
-  searchFilter.cuisineType = cuisineType;
+  let ingredientType = document.getElementById("ingredient-select").value;
+  searchFilter.ingredients = ingredientType;
   renderMeals(items, searchFilter);
 }
 

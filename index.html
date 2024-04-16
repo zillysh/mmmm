@@ -39,9 +39,11 @@
       <select onchange="filterCuisine()" id="cuisine-select" class="select-input">
         <option value="" disabled selected>Select</option>
         <option value="">All</option>
+        <option value="Asian">Asian</option>
         <option value="Italian">Italian</option>
-        <option value="Chinese">Chinese</option>
+        <option value="American">American</option>
         <option value="Mexican">Mexican</option>
+        <option value="Sweet">Sweet</option>
       </select>
       </div>
       <div class="select-container">
@@ -50,18 +52,20 @@
         <option value="" disabled selected>Select</option>
         <option value="">All</option>
         <option value="<15 Minutes"><15 Min</option>
+        <option value="20 Minutes">20 Min</option>  
         <option value="30 Minutes">30 Min</option>
+        <option value="45 Minutes">45 Min</option>
         <option value="60 Minutes">60 Min</option>
       </select>
       </div>
       <div class="select-container">
         <label for="cuisine-select" class="select-label">INGREDIENTS</label>
-      <select onchange="filterCookTime()" id="time-select" class="select-input">
+      <select onchange="filterIngredients()" id="ingredient-select" class="select-input">
         <option value="" disabled selected>Select</option>
         <option value="">All</option>
-        <option value="10 Minutes">Bread</option>
-        <option value="20 Minutes">Noodles</option>
-        <option value="30 Minutes">Cheese</option>
+        <option value="Bread">Bread</option>
+        <option value="Noodles">Noodles</option>
+        <option value="Cheese">Cheese</option>
       </select>
       </div>
     </div>

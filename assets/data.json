@@ -162,7 +162,7 @@
     {
         "image": "food images/strawberry toast.jpg",
         "itemName": "Strawberry Toast",
-        "cookTime": "<15 Minutes",
+        "cookTime": "5 Minutes",
         "ingredients": [""],
         "mealType": ["Snacks","Breakfast","Dessert"],
         "cuisine": "Sweet"

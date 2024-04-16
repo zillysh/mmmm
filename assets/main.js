@@ -48,7 +48,7 @@ let searchFilter = {
     filteredMeals = filteredMeals.filter(item => item.cuisine === filter.cuisineType);
 
   if (filter.cookTime !== '')
-    filteredMeals = filteredMeals.filter(item => item.cookTime === filter.cookTime);
+    filteredMeals = filteredMeals.filter(item => parseInt(item.cookTime) <= parseInt(filter.cookTime));
 
   if (filter.ingredients !== '')
     filteredMeals = filteredMeals.filter(item => item.ingredients.includes(filter.ingredients));

@@ -13,10 +13,11 @@
 <body>
   <header class="header-container">
     <p class="logo">ZS</p>
-    <nav>MENU</nav>
+    <nav id="menu">MENU</nav>
   </header>
   <section class="category-list-container">
     <ul class="category-list">
+      <li><button id="all-button">All,</button></li>
       <li><button id="breakfast-button" data-meal-type="Breakfast">Breakfast,</button></li>
       <li><button id="lunch-button" data-meal-type="Lunch">Lunch,</button></li>
       <li><button id="dinner-button" data-meal-type="Dinner">Dinner,</button></li>
@@ -28,8 +29,7 @@
       <li><button id="noodles-button" data-meal-type="Noodles">Noodles,</button></li>
       <li><button id="pasta-button" data-meal-type="Pasta">Pasta,</button></li>
       <li><button id="breads-button" data-meal-type="Breads">Breads,</button></li>
-      <li><button id="wraps-button" data-meal-type="Wraps">Wraps,</button></li>
-      <li>All</li>
+      <li><button id="wraps-button" data-meal-type="Wraps">Wraps</button></li>
     </ul>
   </section>
   <section class="filter-big-container">
@@ -72,7 +72,7 @@
   </section>
   <section class="item-information">
   <div id="results-text" class="results-text"></div>
-  <button onclick="resetFilters()">RESET</button>
+  <button class="reset" onclick="resetFilters()">RESET</button>
   </section>
   <ul class="food-grid" id="data-list"></ul>
 </body>

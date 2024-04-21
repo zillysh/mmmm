@@ -30,6 +30,10 @@ const renderSingleItem = (item) => {
   updateResultsText(data.length);
 };
 
+document.getElementById('menu').addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
 let searchFilter = {
   mealType: '',
   cuisineType: '',
@@ -100,6 +104,57 @@ function resetFilters() {
 
 }
 
+const allButton = document.getElementById('all-button');
+
+// Add click event listener to 'All' button
+allButton.addEventListener('click', () => {
+  // Reset the filters
+  searchFilter = {
+    mealType: '',
+    cuisineType: '',
+    cookTime: '',
+    ingredients: ''
+  }
+
+  // Render all items
+  renderItems(items);
+
+    // Change font color and style for all li elements
+    const categoryList = document.querySelectorAll('.category-list li');
+    categoryList.forEach(li => {
+      li.style.color = ''; // Reset font color
+      li.style.fontStyle = ''; // Reset font style
+      li.style.borderBottom = ''; // Reset Underline
+    });
+  
+    // Change font color and style for the 'All' button
+    allButton.parentNode.style.color = 'var(--main-text-color)'; // Change font color
+    allButton.parentNode.style.fontStyle = 'italic'; // Change font style
+    allButton.parentNode.style.borderBottom = '2px solid var(--main-text-color)';
+});
+
+
+// Define the function to reset filters and render all items
+function resetAndRenderAll() {
+  // Reset the filters
+  searchFilter = {
+    mealType: '',
+    cuisineType: '',
+    cookTime: '',
+    ingredients: ''
+  };
+
+  // Render all items
+  renderItems(items);
+
+  // Change font color and style for the 'All' button
+  allButton.parentNode.style.color = 'var(--main-text-color)'; // Change font color
+  allButton.parentNode.style.fontStyle = 'italic'; // Change font style
+  allButton.parentNode.style.borderBottom = '2px solid var(--main-text-color)';
+}
+
+// Call the function to set the default state when the page loads
+document.addEventListener('DOMContentLoaded', resetAndRenderAll);
 
 // Fetch gets your (local) JSON file…
 fetch('assets/data.json')
@@ -120,10 +175,12 @@ fetch('assets/data.json')
     categoryList.forEach(li => {
       li.style.color = ''; // Reset font color
       li.style.fontStyle = ''; // Reset font style
+      li.style.borderBottom = ''; // Reset Underline
     });
     // Change font color and style for the clicked li element
     button.parentNode.style.color = 'var(--main-text-color)'; // Change font color
     button.parentNode.style.fontStyle = 'italic'; // Change font style
+    button.parentNode.style.borderBottom = '2px solid var(--main-text-color)';
   });
       });
   });

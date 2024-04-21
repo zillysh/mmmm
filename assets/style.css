@@ -66,6 +66,17 @@ nav{
   font-size: var(--nav);
 }
 
+#menu:hover {
+  color: var(--sub-text-color); 
+  cursor: pointer;
+}
+
+.reset:hover {
+  color: var(--main-text-color); 
+  cursor: pointer;
+}
+
+
 /* FOOD CATEGORY LIST */
 .category-list-container {
   margin-top: 40px;
@@ -100,6 +111,10 @@ nav{
 .category-list li:active {
   font-style: italic;
   color: var(--main-text-color);
+  cursor: pointer;
+}
+
+.category-list li button {
   cursor: pointer;
 }
 

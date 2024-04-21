@@ -26,7 +26,7 @@
     {
         "image": "food images/chocolate oats.jpg",
         "itemName": "Chocolate Oats",
-        "cookTime": "<15 Minutes",
+        "cookTime": "5 Minutes",
         "ingredients": ["Oats", "Chocolate Chips", "Milk", "Berries"],
         "mealType": ["Snacks","Breakfast","Dessert"],
         "cuisine": "Sweet"
@@ -34,7 +34,7 @@
     {
         "image": "food images/ceaser salad.jpg",
         "itemName": "Caeser Salad",
-        "cookTime": "<15 Minutes",
+        "cookTime": "15 Minutes",
         "ingredients": [""],
         "mealType": ["Snacks","Lunch","Quick"],
         "cuisine": "American"
@@ -50,7 +50,7 @@
     {
         "image": "food images/clear dumpling soup.jpg",
         "itemName": "Clear Dumpling Soup",
-        "cookTime": "<15 Minutes",
+        "cookTime": "15 Minutes",
         "ingredients": [""],
         "mealType": ["Lunch","Dinner","Quick"],
         "cuisine": "Asian"
@@ -114,7 +114,7 @@
     {
         "image": "food images/pancakes.jpg",
         "itemName": "Pancakes",
-        "cookTime": "<15 Minutes",
+        "cookTime": "15 Minutes",
         "ingredients": [""],
         "mealType": ["Snacks","Breakfast","Dessert"],
         "cuisine": "Sweet"
@@ -146,7 +146,7 @@
     {
         "image": "food images/spicy dumpling soup.jpg",
         "itemName": "Spicy Dumpling Soup",
-        "cookTime": "<15 Minutes",
+        "cookTime": "15 Minutes",
         "ingredients": [""],
         "mealType": ["Lunch","Dinner","Quick"],
         "cuisine": "Asian"

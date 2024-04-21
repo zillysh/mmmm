@@ -96,14 +96,7 @@ function filterIngredients() {
 
 function resetFilters() {
 
-  searchFilter = {
-    mealType: '',
-    cuisineType: '',
-    cookTime: '',
-    ingredients: ''
-  }
-
-  renderMeals(items, searchFilter);
+  location.reload();
 
 }
 

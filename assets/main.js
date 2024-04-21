@@ -126,7 +126,7 @@ allButton.addEventListener('click', () => {
       li.style.fontStyle = ''; // Reset font style
       li.style.borderBottom = ''; // Reset Underline
     });
-  
+
     // Change font color and style for the 'All' button
     allButton.parentNode.style.color = 'var(--main-text-color)'; // Change font color
     allButton.parentNode.style.fontStyle = 'italic'; // Change font style
@@ -155,6 +155,7 @@ function resetAndRenderAll() {
 
 // Call the function to set the default state when the page loads
 document.addEventListener('DOMContentLoaded', resetAndRenderAll);
+
 
 // Fetch gets your (local) JSON file…
 fetch('assets/data.json')

@@ -51,19 +51,23 @@ header {
   justify-content: space-between;
   box-sizing: border-box;
   padding: 20px 23px;
-  color: var(--main-text-color);
 }
 
 .logo{
   font-family: var(--font-playfair-display);
   font-weight: 400;
   font-size: var(--logo);
+  color: var(--sub-text-color);
 }
 
 nav{
-  font-family: var(--font-dm-mono);
-  font-weight: 400;
-  font-size: var(--nav);
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-playfair-display);
+    font-weight: 400;
+    font-size: var(--logo);
+    color: var(--main-text-color);
+    font-style: italic;
 }
 
 #menu:hover {
@@ -72,7 +76,7 @@ nav{
 }
 
 .reset:hover {
-  color: var(--main-text-color); 
+  color: var(--sub-text-color); 
   cursor: pointer;
 }
 
@@ -89,7 +93,7 @@ nav{
   display: flex;
   flex-wrap: wrap; 
   justify-content: center;
-  max-width: 300px;
+  max-width: 280px;
   font-family: var(--font-playfair-display);
   font-weight: 400;
   font-size: var(--category-font-size);
@@ -127,7 +131,6 @@ nav{
   margin-right: 20px;
   margin-top: 70px;
   margin-bottom: 40px;
-  color: var(--sub-text-color);
 }
 
 .filter-small-container {
@@ -146,7 +149,7 @@ nav{
 .select-container {
   display: flex;
   flex-direction: column;
-  border: 1px solid #ccc;
+  border: 1px solid var(--sub-text-color);
   padding: 10px;
   width: 100%;
   margin-right: 9px; 
@@ -161,11 +164,13 @@ nav{
   left: 0;
   pointer-events: none;
   transition: 0.2s ease-out;
-  border-bottom: 1px solid #ccc;;
+  border-bottom: 1px solid var(--sub-text-color);
+  color: var(--sub-text-color);
 }
 
 .select-input {
   margin-top: 5px;
+  color: var(--main-text-color);
 }
 
 /* ITEM INFORMATION */
@@ -179,12 +184,21 @@ nav{
   font-family: var(--font-dm-mono);
   font-weight: 400;
   font-size: var(--filter-font-size);
+}
+
+.results-text{
   color: var(--sub-text-color);
 }
+
+.reset{
+  color: var(--main-text-color);
+}
+
 
 /* FOOD IMAGES */
 
 .food-grid {
+  margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -196,6 +210,7 @@ nav{
 .item-container{
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .item-container img{

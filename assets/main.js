@@ -30,7 +30,6 @@ const renderSingleItem = (item) => {
   updateResultsText(data.length);
 };
 
-
 document.getElementById('menu').addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
@@ -62,6 +61,7 @@ let searchFilter = {
   const dataList = document.getElementById('data-list');
   dataList.innerHTML = '';
   renderItems(filteredMeals);
+
   return filteredMeals;
 };
 
@@ -137,6 +137,7 @@ allButton.addEventListener('click', () => {
 
 // Define the function to reset filters and render all items
 function resetAndRenderAll() {
+
   // Reset the filters
   searchFilter = {
     mealType: '',
@@ -156,6 +157,7 @@ function resetAndRenderAll() {
 
 // Call the function to set the default state when the page loads
 document.addEventListener('DOMContentLoaded', resetAndRenderAll);
+
 
 
 // Fetch gets your (local) JSON file…

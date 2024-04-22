@@ -17,7 +17,7 @@
 :root {
 --logo: 1.4em;
 --nav: 1.05em;
---category-font-size: 2.5em;
+--category-font-size: 2.8em;
 --filter-font-size: 0.9em;
 --item-font-size: 0.9em;
 }
@@ -27,9 +27,10 @@
 
 /* DECOR */
 :root {
-  --background-color: #F7F6F3;
+  --background-color: #ffffff;
   --main-text-color: #89693A;
   --sub-text-color: #A49885;
+  --category-text-color: #89693a47;
 }
 
 /* BODY */
@@ -81,8 +82,22 @@ nav{
 
 
 /* FOOD CATEGORY LIST */
+
+h2{
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-top: 19px;
+  font-family: var(--font-dm-mono);
+  font-weight: 300;
+  font-size: 0.8em;
+  color: var(--sub-text-color);
+}
+
 .category-list-container {
-  margin-top: 40px;
+  margin-top: -5px;
   margin-bottom: 40px;
   display: flex;
   justify-content: center; 
@@ -96,13 +111,13 @@ nav{
   font-family: var(--font-playfair-display);
   font-weight: 400;
   font-size: var(--category-font-size);
-  color: var(--sub-text-color);
+  color: var(--category-text-color);
   margin-bottom: -10px;
 }
 
 .category-list li{
   margin-right: 10px;
-  margin-bottom: -9px;
+  margin-bottom: -12px;
 }
 
 .category-list li:hover {
@@ -148,7 +163,7 @@ nav{
 .select-container {
   display: flex;
   flex-direction: column;
-  border: 1px solid var(--sub-text-color);
+  border: 1px solid var(--category-text-color);
   padding: 10px;
   width: 100%;
   margin-right: 9px; 
@@ -163,7 +178,7 @@ nav{
   left: 0;
   pointer-events: none;
   transition: 0.2s ease-out;
-  border-bottom: 1px solid var(--sub-text-color);
+  border-bottom: 1px solid var(--category-text-color);
   color: var(--sub-text-color);
 }
 
@@ -171,7 +186,6 @@ nav{
   margin-top: 5px;
   color: var(--main-text-color);
 }
-
 
 
 /* ITEM INFORMATION */
@@ -206,12 +220,13 @@ nav{
   display: grid;
   grid-template-columns: repeat(1, 1fr); 
   grid-gap: 20px; 
+  row-gap: 40px;
+  column-gap: 20px;
 }
 
 .item-container{
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
 }
 
 .item-container img{
@@ -238,7 +253,7 @@ nav{
 }
 
 
-/* 701PX */
+
 @media screen and (min-width: 850px) {
 
   :root{
@@ -249,14 +264,18 @@ nav{
     margin-right: 20px;
     margin-bottom: -20px;
   }
-  
+
   .food-grid {
     grid-template-columns: repeat(4, 1fr);
+    row-gap: 45px;
+    column-gap: 30px;
   }
 
+
+  
 }
 
-/* 701PX */
+
 @media screen and (min-width: 1200px) {
 
 .category-list{

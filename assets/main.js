@@ -12,13 +12,38 @@ let items = [];
 const renderSingleItem = (item) => {
   return `
       <li>
+      <button class="overlay-button">
           <div class="item-container">
               <img src="${item.image}" alt="${item.itemName}">
               <h2>${item.itemName}</h2>
           </div>
+      </button>
+      <div class="overlay">
+          <img src="${item.image}" alt="${item.itemName}">
+          <h2>${item.itemName}</h2>
+          <button class="close-button">X</button>
+      <div>
       </li>
   `;
 };
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('click', (event) => {
+      let openButtons = document.querySelectorAll('.overlay-button');
+  openButtons.forEach((openButton) => {
+    openButton.onclick = () => {
+      openButton.parentElement.classList.toggle('overlay-open');
+    };
+  });
+  let closeButtons = document.querySelectorAll('.close-button');
+  closeButtons.forEach((closeButton) => {
+    closeButton.onclick = () => {
+      closeButton.parentElement.parentElement.parentElement.classList.remove('active');
+    };
+  });
+  });
+});
+
 
 // Function to render list items
   const renderItems = (data) => {

@@ -30,6 +30,7 @@ const renderSingleItem = (item) => {
   updateResultsText(data.length);
 };
 
+
 document.getElementById('menu').addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
@@ -171,6 +172,7 @@ fetch('assets/data.json')
           const mealType = buttonMealTypeList[buttonId];
           searchFilter.mealType = mealType;
           renderMeals(items, searchFilter);
+
         // Change font color and style for all li elements
     const categoryList = document.querySelectorAll('.category-list li');
     categoryList.forEach(li => {

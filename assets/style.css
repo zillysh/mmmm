@@ -67,7 +67,6 @@ nav{
     font-weight: 400;
     font-size: var(--logo);
     color: var(--main-text-color);
-    font-style: italic;
 }
 
 #menu:hover {
@@ -93,7 +92,7 @@ nav{
   display: flex;
   flex-wrap: wrap; 
   justify-content: center;
-  max-width: 280px;
+  max-width: 80%;
   font-family: var(--font-playfair-display);
   font-weight: 400;
   font-size: var(--category-font-size);
@@ -173,6 +172,8 @@ nav{
   color: var(--main-text-color);
 }
 
+
+
 /* ITEM INFORMATION */
 
 .item-information{
@@ -240,8 +241,30 @@ nav{
 /* 701PX */
 @media screen and (min-width: 850px) {
 
+  :root{
+    --category-font-size: 4em; /*THIS*/
+  }
+
+  .category-list li {
+    margin-right: 20px;
+    margin-bottom: -20px;
+  }
+  
   .food-grid {
     grid-template-columns: repeat(4, 1fr);
   }
-  
+
+}
+
+/* 701PX */
+@media screen and (min-width: 1200px) {
+
+.category-list{
+  max-width: 880px;
+}
+
+.filter-big-container {
+  margin-top: 110px;
+}
+
 }

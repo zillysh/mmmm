@@ -12,41 +12,52 @@ let items = [];
 const renderSingleItem = (item) => {
   return `
       <li>
-      <button class="overlay-button">
-          <div class="item-container">
-              <img src="${item.image}" alt="${item.itemName}">
-              <h2>${item.itemName}</h2>
-          </div>
-      </button>
-      <div class="overlay">
-          <img src="${item.image}" alt="${item.itemName}">
-          <h2>${item.itemName}</h2>
-          <button class="close-button">X</button>
-      <div>
+        <button class="overlay-button">
+            <div class="item-container">
+                <img src="${item.image}" alt="${item.itemName}">
+                <h2>${item.itemName}</h2>
+            </div>
+        </button>
+        <div class="overlay">
+            <img src="${item.image}" alt="${item.itemName}">
+            <h2>${item.itemName}</h2>
+            <h2>ingredients</h2>
+            <p>${item.ingredients}</p>
+            <button class="close-button">X</button>
+        <div>
       </li>
   `;
 };
 
-document.addEventListener('DOMContentLoaded', () => {
-  document.addEventListener('click', (event) => {
-      let openButtons = document.querySelectorAll('.overlay-button');
-  openButtons.forEach((openButton) => {
-    openButton.onclick = () => {
-      openButton.parentElement.classList.toggle('overlay-open');
-    };
-  });
-  let closeButtons = document.querySelectorAll('.close-button');
-  closeButtons.forEach((closeButton) => {
-    closeButton.onclick = () => {
-      closeButton.parentElement.parentElement.parentElement.classList.remove('active');
-    };
-  });
-  });
-});
+// document.addEventListener('DOMContentLoaded', () => {
+
+  // document.addEventListener('click', (event) => {
+
+    // let openButtons = document.querySelectorAll('.overlay-button');
+
+    // openButtons.forEach((openButton) => {
+
+    //   openButton.onclick = () => {
+    //     openButton.parentElement.classList.add('overlay-open');
+    //   };
+
+    // });
+
+    // let closeButtons = document.querySelectorAll('.close-button');
+
+    // closeButtons.forEach((closeButton) => {
+
+    //   closeButton.onclick = () => {
+    //     closeButton.parentElement.parentElement.parentElement.classList.remove('active');
+    //   };
+
+    // });
+  // });
+// });
 
 
 // Function to render list items
-  const renderItems = (data) => {
+const renderItems = (data) => {
   const dataList = document.getElementById('data-list');
   data.forEach((item) => {
       dataList.insertAdjacentHTML('beforeend', renderSingleItem(item));
@@ -195,22 +206,47 @@ fetch('assets/data.json')
 
       Object.keys(buttonMealTypeList).forEach(buttonId => {
         const button = document.getElementById(buttonId);
+
         button.addEventListener('click', () => {
           const mealType = buttonMealTypeList[buttonId];
           searchFilter.mealType = mealType;
           renderMeals(items, searchFilter);
 
-        // Change font color and style for all li elements
-    const categoryList = document.querySelectorAll('.category-list li');
-    categoryList.forEach(li => {
-      li.style.color = ''; // Reset font color
-      li.style.fontStyle = ''; // Reset font style
-      li.style.borderBottom = ''; // Reset Underline
-    });
-    // Change font color and style for the clicked li element
-    button.parentNode.style.color = 'var(--main-text-color)'; // Change font color
-    button.parentNode.style.fontStyle = 'italic'; // Change font style
-    button.parentNode.style.borderBottom = '2px solid var(--main-text-color)';
-  });
+          // Change font color and style for all li elements
+          const categoryList = document.querySelectorAll('.category-list li');
+          categoryList.forEach(li => {
+            li.style.color = ''; // Reset font color
+            li.style.fontStyle = ''; // Reset font style
+            li.style.borderBottom = ''; // Reset Underline
+          });
+          // Change font color and style for the clicked li element
+          button.parentNode.style.color = 'var(--main-text-color)'; // Change font color
+          button.parentNode.style.fontStyle = 'italic'; // Change font style
+          button.parentNode.style.borderBottom = '2px solid var(--main-text-color)';
+        });
       });
-  });
+  })
+  .then(data => {
+
+    let openButtons = document.querySelectorAll('.overlay-button');
+
+    openButtons.forEach((openButton) => {
+
+      openButton.onclick = () => {
+        console.log(openButton.parentElement.lastChild)
+        openButton.parentElement.lastChild.classList.remove('overlay');
+        openButton.parentElement.lastChild.classList.add('overlay-open');
+      };
+    });
+
+    let closeButtons = document.querySelectorAll('.close-button');
+
+    closeButtons.forEach((closeButton) => {
+
+      closeButton.onclick = () => {
+        closeButton.parentElement.classList.add('overlay');
+        closeButton.parentElement.classList.remove('overlay-open');
+      };
+
+    });
+  })

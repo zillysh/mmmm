@@ -79,7 +79,7 @@ let searchFilter = {
 
   if (filter.ingredients !== '')
     filteredMeals = filteredMeals.filter(item => item.ingredients.includes(filter.ingredients));
-  
+
   // Render filtered meals
   const dataList = document.getElementById('data-list');
   dataList.innerHTML = '';
@@ -134,13 +134,7 @@ const allButton = document.getElementById('all-button');
 
 // Add click event listener to 'All' button
 allButton.addEventListener('click', () => {
-  // Reset the filters
-    searchFilter = {
-    mealType: '',
-    cuisineType: '',
-    cookTime: '',
-    ingredients: ''
-  }
+ location.reload();
 
   // Render all items
   renderItems(items);

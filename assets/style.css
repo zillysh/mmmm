@@ -403,7 +403,7 @@ footer p{
     --nav: 1.4em;
     --category-font-size: 4em; 
     --overlay-h2-size: 4.3em;
-    --footer-font-size: 3.5em;
+    --footer-font-size: 3em;
     --overlay-h3-size: 1.1em;
   }
 
@@ -460,6 +460,10 @@ footer p{
 
   .overlay-box{
     width: 70%;
+  }
+
+  .footer{
+    margin-top: 120px;
   }
 }
 

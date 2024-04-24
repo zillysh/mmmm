@@ -72,6 +72,16 @@ header p:hover{
   cursor: pointer;
 }
 
+header a{
+  text-align: right;
+  margin-left: 15px;
+}
+
+header a:hover{
+  color: var(--sub-text-color); 
+  cursor: pointer;
+}
+
 #menu:hover {
   color: var(--sub-text-color); 
   cursor: pointer;

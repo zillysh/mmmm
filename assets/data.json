@@ -35,15 +35,15 @@
         "image": "food images/ceaser salad.jpg",
         "itemName": "Caeser Salad",
         "cookTime": "15 Minutes",
-        "ingredients": [""],
+        "ingredients": ["Lettuce", "Croutons", "Tomato"],
         "mealType": ["Snacks","Lunch","Quick"],
         "cuisine": "American"
     },
     {
         "image": "food images/chilli oil noodles.jpg",
         "itemName": "Chilli Oil Noodles",
-        "cookTime": "20 Minutes",
-        "ingredients": [""],
+        "cookTime": "15 Minutes",
+        "ingredients": ["Knife Cut Noodles", "Chilli Oil", "Soy Sauce"],
         "mealType": ["Lunch","Dinner","Noodles","Quick"],
         "cuisine": "Asian"
     },
@@ -51,7 +51,7 @@
         "image": "food images/clear dumpling soup.jpg",
         "itemName": "Clear Dumpling Soup",
         "cookTime": "15 Minutes",
-        "ingredients": [""],
+        "ingredients": ["Soup Powder", "Tofu", "Veggies"],
         "mealType": ["Lunch","Dinner","Quick"],
         "cuisine": "Asian"
     },
@@ -59,7 +59,7 @@
         "image": "food images/creamy ravioli.jpg",
         "itemName": "Creamy Ravioli",
         "cookTime": "45 Minutes",
-        "ingredients": [""],
+        "ingredients": ["Ravioli", "Heavy Cream", "Cheese", "Cherry Tomato"],
         "mealType": ["Lunch","Dinner","Pasta","Fancy"],
         "cuisine": "Italian"
     },
@@ -67,7 +67,7 @@
         "image": "food images/dan dan noodles.jpg",
         "itemName": "Dan Dan Noodles",
         "cookTime": "20 Minutes",
-        "ingredients": [""],
+        "ingredients": ["Noodles", "Tofu", "Bok Choy", "Sesame Sauce"],
         "mealType": ["Lunch","Dinner","Noodles","Quick"],
         "cuisine": "Asian"
     },
@@ -75,7 +75,7 @@
         "image": "food images/fried rice.jpg",
         "itemName": "Fried Rice",
         "cookTime": "30 Minutes",
-        "ingredients": [""],
+        "ingredients": ["Rice", "Veggies", "Tofu"],
         "mealType": ["Lunch","Dinner"],
         "cuisine": "Asian"
     },
@@ -83,7 +83,7 @@
         "image": "food images/kimbap.jpg",
         "itemName": "Kimbap",
         "cookTime": "60 Minutes",
-        "ingredients": [""],
+        "ingredients": ["Rice", "Seaweed", "Veggies"],
         "mealType": ["Lunch","Dinner","Fancy"],
         "cuisine": "Asian"
     },
@@ -91,7 +91,7 @@
         "image": "food images/mac & cheese.jpg",
         "itemName": "Mac & Cheese",
         "cookTime": "20 Minutes",
-        "ingredients": [""],
+        "ingredients": ["Pasta", "Milk", "Cheese", "Olives"],
         "mealType": ["Lunch","Dinner","Pasta","Quick"],
         "cuisine": "Italian"
     },
@@ -99,7 +99,7 @@
         "image": "food images/mango sticky rice.jpg",
         "itemName": "Mango Sticky Rice",
         "cookTime": "45 Minutes",
-        "ingredients": [""],
+        "ingredients": ["Mango", "Coconut Milk", "Sticky Rice"],
         "mealType": ["Dessert"],
         "cuisine": "Sweet"
     },
@@ -107,7 +107,7 @@
         "image": "food images/noodle soup.jpg",
         "itemName": "Noodle Soup",
         "cookTime": "20 Minutes",
-        "ingredients": [""],
+        "ingredients": ["Noodles", "Bok Choy", "Tofu"],
         "mealType": ["Lunch","Dinner","Noodles","Quick"],
         "cuisine": "Asian"
     },
@@ -123,7 +123,7 @@
         "image": "food images/pizza.jpg",
         "itemName": "Pizza",
         "cookTime": "30 Minutes",
-        "ingredients": [""],
+        "ingredients": ["Pizza Base", "Marinara Sauce", "Cheese"],
         "mealType": ["Lunch","Breads","Dinner"],
         "cuisine": "Italian"
     },
@@ -185,7 +185,7 @@
     },
     {
         "image": "food images/bahn mi.jpg",
-        "itemName": "Bahn Mi",
+        "itemName": "Banh Mi",
         "cookTime": "60 Minutes",
         "ingredients": ["Bread", "Tofu", "Pickled Veg", "Dressing"],
         "mealType": ["Lunch","Breads","Fancy"],

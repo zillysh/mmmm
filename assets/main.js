@@ -15,45 +15,30 @@ const renderSingleItem = (item) => {
         <button class="overlay-button">
             <div class="item-container">
                 <img src="${item.image}" alt="${item.itemName}">
-                <h2>${item.itemName}</h2>
+                <p>${item.itemName}</p>
             </div>
         </button>
         <div class="overlay">
-            <img src="${item.image}" alt="${item.itemName}">
-            <h2>${item.itemName}</h2>
-            <h2>ingredients</h2>
-            <p>${item.ingredients}</p>
-            <button class="close-button">X</button>
+            <button class="close-button">×</button>
+            <section class="item-information-container">
+              <section class="item-overlay-image">
+                <img src="${item.image}" alt="${item.itemName}">
+              </section>
+              <section class="item-text-container">
+                <div>
+                  <h2>${item.itemName}</h2>
+                  <h3>⏱︎${item.cookTime}</h3>
+                  <h3>Ingredients</h3>
+                  <ul>
+                    ${item.ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
+                  </ul>
+                </div>
+              </section>
+            </section>
         <div>
       </li>
   `;
 };
-
-// document.addEventListener('DOMContentLoaded', () => {
-
-  // document.addEventListener('click', (event) => {
-
-    // let openButtons = document.querySelectorAll('.overlay-button');
-
-    // openButtons.forEach((openButton) => {
-
-    //   openButton.onclick = () => {
-    //     openButton.parentElement.classList.add('overlay-open');
-    //   };
-
-    // });
-
-    // let closeButtons = document.querySelectorAll('.close-button');
-
-    // closeButtons.forEach((closeButton) => {
-
-    //   closeButton.onclick = () => {
-    //     closeButton.parentElement.parentElement.parentElement.classList.remove('active');
-    //   };
-
-    // });
-  // });
-// });
 
 
 // Function to render list items
@@ -146,7 +131,7 @@ const allButton = document.getElementById('all-button');
 // Add click event listener to 'All' button
 allButton.addEventListener('click', () => {
   // Reset the filters
-  searchFilter = {
+    searchFilter = {
     mealType: '',
     cuisineType: '',
     cookTime: '',
@@ -171,11 +156,11 @@ allButton.addEventListener('click', () => {
 });
 
 
-// Define the function to reset filters and render all items
+// Function to reset filters and render all items
 function resetAndRenderAll() {
 
   // Reset the filters
-  searchFilter = {
+    searchFilter = {
     mealType: '',
     cuisineType: '',
     cookTime: '',
@@ -191,8 +176,8 @@ function resetAndRenderAll() {
   allButton.parentNode.style.borderBottom = '2px solid var(--main-text-color)';
 }
 
-// Call the function to set the default state when the page loads
-document.addEventListener('DOMContentLoaded', resetAndRenderAll);
+  // Function to set the default state when the page loads
+  document.addEventListener('DOMContentLoaded', resetAndRenderAll);
 
 
 

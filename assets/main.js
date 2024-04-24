@@ -83,6 +83,8 @@ let searchFilter = {
   dataList.innerHTML = '';
   renderItems(filteredMeals);
 
+  attachOverlayButtonListeners();
+
   return filteredMeals;
 };
 
@@ -179,40 +181,7 @@ function resetAndRenderAll() {
   // Function to set the default state when the page loads
   document.addEventListener('DOMContentLoaded', resetAndRenderAll);
 
-
-
-// Fetch gets your (local) JSON file…
-fetch('assets/data.json')
-  .then(response => response.json())
-  .then(data => {
-      items = data;
-      // Initial rendering of all items
-      renderItems(data);
-
-      Object.keys(buttonMealTypeList).forEach(buttonId => {
-        const button = document.getElementById(buttonId);
-
-        button.addEventListener('click', () => {
-          const mealType = buttonMealTypeList[buttonId];
-          searchFilter.mealType = mealType;
-          renderMeals(items, searchFilter);
-
-          // Change font color and style for all li elements
-          const categoryList = document.querySelectorAll('.category-list li');
-          categoryList.forEach(li => {
-            li.style.color = ''; // Reset font color
-            li.style.fontStyle = ''; // Reset font style
-            li.style.borderBottom = ''; // Reset Underline
-          });
-          // Change font color and style for the clicked li element
-          button.parentNode.style.color = 'var(--main-text-color)'; // Change font color
-          button.parentNode.style.fontStyle = 'italic'; // Change font style
-          button.parentNode.style.borderBottom = '2px solid var(--main-text-color)';
-        });
-      });
-  })
-  .then(data => {
-
+  function attachOverlayButtonListeners() {
     let openButtons = document.querySelectorAll('.overlay-button');
 
     openButtons.forEach((openButton) => {
@@ -234,4 +203,41 @@ fetch('assets/data.json')
       };
 
     });
+  }
+
+// Fetch gets your (local) JSON file…
+fetch('assets/data.json')
+  .then(response => response.json())
+  .then(data => {
+      items = data;
+      // Initial rendering of all items
+      renderItems(data);
+
+      attachOverlayButtonListeners();
+      Object.keys(buttonMealTypeList).forEach(buttonId => {
+        const button = document.getElementById(buttonId);
+
+        button.addEventListener('click', () => {
+          const mealType = buttonMealTypeList[buttonId];
+          searchFilter.mealType = mealType;
+          const filteredMeals = renderMeals(items, searchFilter);
+          if (filteredMeals.length > 0) {
+            attachOverlayButtonListeners();
+          }
+
+          // Change font color and style for all li elements
+          const categoryList = document.querySelectorAll('.category-list li');
+          categoryList.forEach(li => {
+            li.style.color = ''; // Reset font color
+            li.style.fontStyle = ''; // Reset font style
+            li.style.borderBottom = ''; // Reset Underline
+          });
+          // Change font color and style for the clicked li element
+          button.parentNode.style.color = 'var(--main-text-color)'; // Change font color
+          button.parentNode.style.fontStyle = 'italic'; // Change font style
+          button.parentNode.style.borderBottom = '2px solid var(--main-text-color)';
+        });
+      });
   })
+
+

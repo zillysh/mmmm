@@ -51,9 +51,17 @@
         "image": "food images/clear dumpling soup.jpg",
         "itemName": "Clear Dumpling Soup",
         "cookTime": "15 Minutes",
-        "ingredients": ["Soup Powder", "Tofu", "Veggies"],
+        "ingredients": ["Broth", "Tofu", "Veggies"],
         "mealType": ["Lunch","Dinner","Quick"],
         "cuisine": "Asian"
+    },
+    {
+        "image": "food images/spaghetti marinara.jpg",
+        "itemName": "Spaghetti Marinara",
+        "cookTime": "30 Minutes",
+        "ingredients": ["Pasta", "Marinara Sauce", "Olive Oil", "Basil"],
+        "mealType": ["Lunch","Dinner","Pasta","Quick"],
+        "cuisine": "Italian"
     },
     {
         "image": "food images/creamy ravioli.jpg",
@@ -115,7 +123,7 @@
         "image": "food images/pancakes.jpg",
         "itemName": "Pancakes",
         "cookTime": "15 Minutes",
-        "ingredients": [""],
+        "ingredients": ["Flour", "Milk", "Sugar", "Butter", "Salt"],
         "mealType": ["Snacks","Breakfast","Dessert"],
         "cuisine": "Sweet"
     },
@@ -131,15 +139,7 @@
         "image": "food images/rosé pasta.jpg",
         "itemName": "Rosé Pasta",
         "cookTime": "30 Minutes",
-        "ingredients": [""],
-        "mealType": ["Lunch","Dinner","Pasta","Quick"],
-        "cuisine": "Italian"
-    },
-    {
-        "image": "food images/spaghetti marinara.jpg",
-        "itemName": "Spaghetti Marinara",
-        "cookTime": "30 Minutes",
-        "ingredients": [""],
+        "ingredients": ["Pasta", "Tomato Sauce", "Heavy Cream", "Cheese"],
         "mealType": ["Lunch","Dinner","Pasta","Quick"],
         "cuisine": "Italian"
     },
@@ -147,7 +147,7 @@
         "image": "food images/spicy dumpling soup.jpg",
         "itemName": "Spicy Dumpling Soup",
         "cookTime": "15 Minutes",
-        "ingredients": [""],
+        "ingredients": ["Dumplings", "Broth", "Soy Sauce", "Sesame Oil"],
         "mealType": ["Lunch","Dinner","Quick"],
         "cuisine": "Asian"
     },
@@ -155,7 +155,7 @@
         "image": "food images/spinach ravioli.jpg",
         "itemName": "Spinach Ravioli",
         "cookTime": "60 Minutes",
-        "ingredients": [""],
+        "ingredients": ["Ravioli", "Spinach", "Ricotta Cheese"],
         "mealType": ["Lunch","Dinner","Pasta","Fancy"],
         "cuisine": "Italian"
     },
@@ -163,7 +163,7 @@
         "image": "food images/strawberry toast.jpg",
         "itemName": "Strawberry Toast",
         "cookTime": "5 Minutes",
-        "ingredients": [""],
+        "ingredients": ["Bread", "Strawberries", "Banana"],
         "mealType": ["Snacks","Breakfast","Dessert"],
         "cuisine": "Sweet"
     },
@@ -171,7 +171,7 @@
         "image": "food images/tofu dumplings.jpg",
         "itemName": "Tofu Dumplings",
         "cookTime": "45 Minutes",
-        "ingredients": [""],
+        "ingredients": ["Tofu", "Dumpling Wrappers", "Cabbage", "Soy Sauce", "Sesame Oil"],
         "mealType": ["Dinner","Fancy"],
         "cuisine": "Asian"
     },
@@ -179,7 +179,7 @@
         "image": "food images/tofu stir fry.jpg",
         "itemName": "Tofu Stir-Fry",
         "cookTime": "20 Minutes",
-        "ingredients": [""],
+        "ingredients": ["Tofu", "Bell Peppers", "Broccoli", "Soy Sauce", "Rice"],
         "mealType": ["Lunch","Dinner","Quick"],
         "cuisine": "Asian"
     },
@@ -189,6 +189,134 @@
         "cookTime": "60 Minutes",
         "ingredients": ["Bread", "Tofu", "Pickled Veg", "Dressing"],
         "mealType": ["Lunch","Breads","Fancy"],
+        "cuisine": "Asian"
+    },
+    {
+        "image": "food images/lemon mint water.jpg",
+        "itemName": "Lemon Mint Water",
+        "cookTime": "5 Minutes",
+        "ingredients": ["Water", "Lemon", "Mint Leaves", "Ice"],
+        "mealType": ["Beverages"],
+        "cuisine": "Sweet"
+    },
+    {
+        "image": "food images/avacado toast.jpg",
+        "itemName": "Avocado Toast",
+        "cookTime": "10 Minutes",
+        "ingredients": ["Bread", "Avocado", "Salt", "Pepper"],
+        "mealType": ["Breakfast","Lunch","Quick"],
+        "cuisine": "Mexican"
+    },
+    {
+        "image": "food images/banana bread.jpg",
+        "itemName": "Banana Bread",
+        "cookTime": "60 Minutes",
+        "ingredients": ["Bananas", "Flour", "Sugar", "Butter"],
+        "mealType": ["Breakfast","Breads","Dessert"],
+        "cuisine": "Sweet"
+    },
+    {
+        "image": "food images/peach green tea.jpg",
+        "itemName": "Peach Green Tea",
+        "cookTime": "5 Minutes",
+        "ingredients": ["Peaches", "Green Tea Bags", "Water", "Sugar", "Ice"],
+        "mealType": ["Beverages"],
+        "cuisine": "Sweet"
+    },
+    {
+        "image": "food images/berry cheesecake.jpg",
+        "itemName": "Berry Cheesecake",
+        "cookTime": "60 Minutes",
+        "ingredients": ["Graham Crackers", "Cream Cheese", "Sugar", "Vanilla Extract", "Berries"],
+        "mealType": ["Dessert"],
+        "cuisine": "Sweet"
+    },
+    {
+        "image": "food images/black bean burrito.jpg",
+        "itemName": "Black Bean Burrito",
+        "cookTime": "25 Minutes",
+        "ingredients": ["Black Beans", "Tortillas", "Salsa", "Lettuce", "Cheese"],
+        "mealType": ["Lunch","Dinner","Quick","Wraps"],
+        "cuisine": "Mexican"
+    },
+    {
+        "image": "food images/blueberry smoothie.jpg",
+        "itemName": "Blueberry Smoothie",
+        "cookTime": "5 Minutes",
+        "ingredients": ["Blueberries", "Banana", "Yogurt", "Milk", "Honey"],
+        "mealType": ["Breakfast","Beverages","Quick"],
+        "cuisine": "Sweet"
+    },
+    {
+        "image": "food images/cinnamon roll.jpg",
+        "itemName": "Cinnamon Roll",
+        "cookTime": "60 Minutes",
+        "ingredients": ["Flour", "Yeast", "Milk", "Sugar", "Butter", "Cinnamon"],
+        "mealType": ["Breakfast","Breads","Dessert"],
+        "cuisine": "Sweet"
+    },
+    {
+        "image": "food images/jajangmyeon.jpg",
+        "itemName": "Jajangmyeon",
+        "cookTime": "30 Minutes",
+        "ingredients": ["Noodles", "Black Bean Paste", "Zucchini"],
+        "mealType": ["Lunch","Dinner","Noodles","Fancy"],
+        "cuisine": "Asian"
+    },
+    {
+        "image": "food images/kimchi grilled cheese.jpg",
+        "itemName": "Kimchi Grilled Cheese",
+        "cookTime": "15 Minutes",
+        "ingredients": ["Bread", "Kimchi", "Cheese", "Butter"],
+        "mealType": ["Lunch","Dinner","Breads"],
+        "cuisine": "Asian"
+    },
+    {
+        "image": "food images/lasagne.jpg",
+        "itemName": "Lasagne",
+        "cookTime": "45 Minutes",
+        "ingredients": ["Lasagne Sheets", "Spinach", "Cheese"],
+        "mealType": ["Lunch","Dinner","Pasta"],
+        "cuisine": "Italian"
+    },
+    {
+        "image": "food images/passion fruit tea.jpg",
+        "itemName": "Passion Fruit Tea",
+        "cookTime": "5 Minutes",
+        "ingredients": ["Passion Fruit", "Tea Bags", "Water", "Sugar", "Ice"],
+        "mealType": ["Beverages"],
+        "cuisine": "Sweet"
+    },
+    {
+        "image": "food images/sesame silken tofu.jpg",
+        "itemName": "Sesame Silken Tofu",
+        "cookTime": "15 Minutes",
+        "ingredients": ["Silken Tofu", "Soy Sauce", "Sesame Oil", "Green Onions", "Sesame Seeds"],
+        "mealType": ["Lunch","Quick","Snacks"],
+        "cuisine": "Asian"
+    },
+    {
+        "image": "food images/soft shell taco.jpg",
+        "itemName": "Soft Shell Taco",
+        "cookTime": "30 Minutes",
+        "ingredients": ["Tortillas", "Lettuce", "Tomatoes", "Cheese", "Sour Cream"],
+        "mealType": ["Lunch","Dinner","Wraps","Quick"],
+        "cuisine": "Mexican"
+    },
+    {
+        "image": "food images/tteokbokki.jpg",
+        "itemName": "Tteokbokki",
+        "cookTime": "30 Minutes",
+        "ingredients": ["Rice Cakes", "Gochujang", "Sugar", "Soy Sauce"],
+        "mealType": ["Lunch","Dinner","Fancy"],
+        "cuisine": "Asian"
+    },
+    {
+        "image": "food images/veggie bao.jpg",
+        "itemName": "Veggie Bao",
+        "cookTime": "40 Minutes",
+        "ingredients": ["Bao Buns", "Tofu", "Pickled Veg"],
+        "mealType": ["Lunch","Dinner","Fancy"],
         "cuisine": "Asian"
     }
 ]

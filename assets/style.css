@@ -15,9 +15,9 @@
 
 /* FONT DETAILS */
 :root {
---logo: 1.3em;
---nav: 1.05em;
+--nav: 1.2em;
 --category-font-size: 2.8em;
+--footer-font-size: 2.5em;
 --filter-font-size: 0.9em;
 --item-font-size: 0.9em;
 --overlay-h2-size: 2.3em;
@@ -52,26 +52,24 @@ body{
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   box-sizing: border-box;
-  padding: 10px 23px;
+  padding: 12px 23px;
   border-bottom: 1px solid var(--category-text-color);
-}
-
-.logo{
   font-family: var(--font-playfair-display);
   font-weight: 400;
-  font-size: var(--logo);
-  color: var(--sub-text-color);
+  font-size: var(--nav);
+  color: var(--main-text-color);
 }
 
-nav{
-    display: flex;
-    justify-content: center;
-    font-family: var(--font-playfair-display);
-    font-weight: 400;
-    font-size: var(--logo);
-    color: var(--main-text-color);
+header p{
+  text-align: right;
+  margin-left: 15px;
+}
+
+header p:hover{
+  color: var(--sub-text-color); 
+  cursor: pointer;
 }
 
 #menu:hover {
@@ -349,6 +347,35 @@ nav{
   text-decoration: underline;
 }
 
+/*FOOTER*/
+
+footer{
+  bottom: 0;
+  background-color: var(--sub-text-color);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin-top: 50px;
+  padding-top: 90px;
+  padding-bottom: 40px;
+  padding-left: 23px;
+  padding-right: 23px;
+  border-top: 1px solid var(--category-text-color);
+}
+
+footer p{
+  font-family: var(--font-playfair-display);
+  font-weight: 400;
+  font-size: var(--footer-font-size);
+  color: var(--background-color);
+  line-height: 40px;
+}
+
+.name {
+  text-align: right
+}
+
 /* 701PX */
 @media screen and (min-width: 450px) {
 
@@ -363,8 +390,10 @@ nav{
 @media screen and (min-width: 850px) {
 
   :root{
+    --nav: 1.4em;
     --category-font-size: 4em; 
     --overlay-h2-size: 4.3em;
+    --footer-font-size: 3.5em;
     --overlay-h3-size: 1.1em;
   }
 

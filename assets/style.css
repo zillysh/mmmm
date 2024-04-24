@@ -264,9 +264,19 @@ nav{
 
 .close-button{
   display: flex;
+  color: var(--main-text-color); 
+  font-size: 30px; 
+  cursor: pointer;
+  margin-left: auto;
 }
 
 .overlay-open{
+  position: fixed;
+  inset: 0px;
+  background: #f0edeae6;
+}
+
+.overlay-box{
   position: fixed;
   top: 50%;
   left: 50%;
@@ -275,7 +285,6 @@ nav{
   background-color: rgba(255, 255, 255);
   padding: 20px; 
   width: 80%;
-  height: 80%;
 }
 
 .overlay-open img{
@@ -288,7 +297,7 @@ nav{
 .item-information-container{
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 15px;
   align-items: center;
 }
 
@@ -302,6 +311,7 @@ nav{
 .item-text-container{
   flex: 1;
   margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 .item-text-container h2{
@@ -332,6 +342,9 @@ nav{
   margin-top: -3px;
 }
 
+.text-underline{
+  text-decoration: underline;
+}
 
 /* 701PX */
 @media screen and (min-width: 450px) {

@@ -19,6 +19,7 @@ const renderSingleItem = (item) => {
             </div>
         </button>
         <div class="overlay">
+            <section class="overlay-box">
             <button class="close-button">×</button>
             <section class="item-information-container">
               <section class="item-overlay-image">
@@ -28,12 +29,13 @@ const renderSingleItem = (item) => {
                 <div>
                   <h2>${item.itemName}</h2>
                   <h3>⏱︎${item.cookTime}</h3>
-                  <h3>Ingredients</h3>
+                  <h3 class="text-underline">Ingredients</h3>
                   <ul>
                     ${item.ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
                   </ul>
                 </div>
               </section>
+            </section>
             </section>
         <div>
       </li>
@@ -198,8 +200,8 @@ function resetAndRenderAll() {
     closeButtons.forEach((closeButton) => {
 
       closeButton.onclick = () => {
-        closeButton.parentElement.classList.add('overlay');
-        closeButton.parentElement.classList.remove('overlay-open');
+        closeButton.parentElement.parentElement.classList.add('overlay');
+        closeButton.parentElement.parentElement.classList.remove('overlay-open');
       };
 
     });
